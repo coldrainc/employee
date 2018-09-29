@@ -1,0 +1,47 @@
+/* CSS Document */
+#container{ margin:0px auto; width:960px; zoom:1; overflow:hidden; border:solid 1px #000000;}
+
+#header{ height:150px; overflow:hidden; position:relative; z-index:1; }
+#header h1{ font-size:24px; font-weight:bold; padding-left:125px; padding-top:40px; color:#fff; letter-spacing:1px; position:relative; z-index:9; }
+#header img { margin-top:-69px; }
+
+#nav{ line-height:32px; height:32px; zoom:1; overflow:hidden; background:#dcdcdc url(../images/dwbgs_nav1.jpg) repeat-x top left; margin-top:-38px; position:relative; z-index:999; border-bottom:#2c4983 1px solid; border-top:#dcdcdc 3px solid; }
+#nav ul{ font-size:14px;}
+#nav li{ float:left;text-align:center;  padding:0px 30px; line-height:30px; height:30px; background:url(../images/dwbgs_banner2.jpg) top right no-repeat;}
+#nav li.nav_index{ padding-right:30px;}
+#nav li.nav_contact{ background:none;}
+#nav li a{ color:#000;}
+
+#content{zoom:1; overflow:hidden;background:#2c4983 url(../images/ltxgzc_leftdown_bg.gif) no-repeat bottom left;}
+
+#c_left{ float:left; display:inline; width:209px;}
+#search{ background:url(../images/ltxgzc_search.gif) no-repeat top left; width:209px;}
+#search form{ padding-top:5px; padding-left:10px; background:url(../images/ltxgzc_search.gif) no-repeat top left; line-height:25px; height:25px;}
+#search form span{ margin-right:8px; color:#fdfefd;}
+.text{ width:124px; background:none; border:none; padding-left:3px; line-height:14px; height:14px;}
+.btn{ background:none; height:15px; cursor:pointer; border:none; width:15px;}
+
+
+#c_left p { color:#b7c7d4; font-weight:bold; line-height:25px; padding-left:15px; margin-top:10px; font-family:Arial, Helvetica, sans-serif;}
+#c_left p a{color:#b7c7d4;}
+#c_left p a:hover{ text-decoration:underline;}
+#c_left dl{ margin-left:20px; line-height:23px; font-size:12px; margin-top:10px;}
+#c_left dt{ padding-left:5px;}
+#c_left dd{ padding-left:20px;}
+#c_left dl a{color:#b7c7d4;}
+
+#c_right{ width:653px; float:left; display:inline;zoom:1; overflow:hidden; background:#FFFFFF; padding-top:20px; padding-right:60px; padding-left:37px;}
+#c_right h3{ font-weight:bold; font-size:14px; color:#326b88; border-bottom:2px solid #85a6b7;line-height:20px; height:20px;}
+
+#r_content{zoom:1; overflow:hidden; padding-top:20px; padding-bottom:80px;}
+#r_content h4{ font-size:14px; text-align:center; line-height:35px; height:35px; color:#333;}
+#r_content img{ float:right; margin:10px;}
+#r_content p{ line-height:25px; font-size:14px; color:#333; margin-top:20px;}
+
+
+/* info_02 */
+.info_02 { width:190px; height:67px; display:block; background:url(../images/100year_02.gif) no-repeat; margin-top:15px; overflow:hidden; }
+
+
+#footer{ clear:both; background:#2c4983; text-align:center; color:#8697ab; line-height:18px; font-family:Arial, Helvetica, sans-serif; padding:10px 0px;}
+ 

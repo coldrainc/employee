@@ -1,0 +1,172 @@
+/* CSS Document */
+
+.containBg img {
+	height:320px;
+	width:100%;
+}
+body{
+	background:#EFEFEE;
+}
+.containContain {
+	width:1000px;
+	
+	margin-top:-45px;
+	position:relative;
+}
+.schoolIn_left {
+	float:left;
+}
+.schoolIn_left_top {
+	width:200px;
+	background:#FFF;
+}
+.aboutLi span {
+	width:175px;
+	height:35px;
+	line-height:35px;
+	padding-left:25px;
+	display:block;
+}
+.aboutLi span a {
+	font-size:13px;
+	font-weight:bold;
+	color:#2A2A2A;
+}
+.aboutLi {
+	border-bottom:#E4E4E4 solid 1px;
+	cursor:pointer;
+	font-weight:bold;
+	background:url(../images/schoolIn/twotitle_down.jpg) no-repeat;
+}
+.aboutLi a {
+	font-weight:300;
+	color:#2A2A2A;
+}
+.aboutLi ul {
+	display:none;
+}
+.aboutLi li {
+	width:155px;
+	height:35px;
+	line-height:35px;
+	padding-left:45px;
+	font-size:13px;
+	display:block;
+	background:url(../images/liLeft.png) no-repeat 30px center;
+}
+.aboutLi li a:hover {
+	color:#f00;
+}
+.schoolIn_left_bottom {
+	width:172px;
+	margin-top:16px;
+	padding:8px 14px 8px 17px;
+	background:#FFF;
+}
+.schoolIn_left_bottom span {
+	color:#000;
+	display:block;
+	font-size:12px;
+	font-weight:800;
+}
+.schoolIn_left_bottom ul {
+	border-top:dashed 1px #B9B9B9;
+	border-bottom:dashed 1px #B9B9B9;
+	margin-top:10px;
+	padding-left:11px;
+}
+.schoolIn_left_bottom li {
+	background:url(../images/liLeft.png) no-repeat;
+	background-position:center left;
+	height:24px;
+	padding-left:10px;
+}
+.schoolIn_left_bottom a {
+	font-size:12px;
+	color:#707075;
+	line-height:24px;
+	_line-height:25px;
+	display:block;
+}
+input {
+	border:1px #DADADA solid;
+	height:22px;
+	width:74px;
+}
+select {
+	border:1px #DADADA solid;
+	height:24px;
+	width:50px;
+*height:26px;
+	_margin-top:-3px;
+}
+.schoolIn_right,.schoolIn_left_bottom,.schoolIn_left_top {
+	border-top:#B4181F solid 4px;
+}
+.schoolIn_right {
+	float:right;
+	width:748px;
+	
+	padding:12px;
+	background:#fff;
+}
+
+
+.schoolIn_right span a {
+	font-family:宋体;
+	font-size:12px;
+	line-height:30px;
+	color:#8E8E8E;
+}
+
+.schoolIn_right span {
+	font-family:宋体;
+	font-size:12px;
+	line-height:30px;
+	color:#000;
+}
+
+.schoolIn_right h {
+	font-size:18px;
+	font-weight:bold;
+	margin-bottom:5px;
+	display:block;
+	color:#2A2A2A;
+}
+.schoolIn_right div img {
+	margin:6px auto;
+}
+.schoolIn_right p {
+	font-size:14px;
+	color:#565656;
+	margin:12px auto;
+	font-family:微软雅黑;
+}
+.hh {
+	font-size:14px;
+	line-height:14px;
+	color:#DD4446;
+}
+.schoolIn_right_contain {
+	width:718px;
+	padding:15px;
+	margin-top:10px;
+	border-top:solid 1px #EFEFEE;
+}
+
+
+.selectSubClass {
+	background:url(../../images/twotitle.jpg) no-repeat;
+	font-size:30px;
+	height:100px;
+}
+p{line-height:28px}
+
+.go{width:47px;height:70px;background-color:#FFF;position:fixed;_position:absolute;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||200)-(parseInt(this.currentStyle.marginBottom,10)||0)));right:12px;bottom:25%;border-radius:5px;box-shadow:0 0 2px #6E6E6E}
+.go a{background:url(../images/a.png) no-repeat;display:block;text-indent:999em;width:37px;margin:5px;border:0;overflow:hidden;float:left}
+.go .top{background-position:0 -33px;height:22px}
+.go .feedback{background-position:0 -54px;height:32px}
+.go .bottom{background-position:0 -88px;height:22px}
+.go .top:hover{background-position:-38px -33px}
+.go .feedback:hover{background-position:-38px -54px}
+.go .bottom:hover{background-position:-38px -88px}

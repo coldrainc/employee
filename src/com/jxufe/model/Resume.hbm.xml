@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jxufe.model">
+	<class name="Resume" table="resume" catalog="jygl">
+		<id name="resumeId" type="int">
+			<column name="resumeId"></column>
+			<generator class="identity"></generator>
+		</id>
+		<property name="number" type="string">
+			<column name="number"></column>
+		</property>
+		<property name="name" type="string">
+			<column name="name"></column>
+		</property>
+		<property name="age" type="int">
+			<column name="age"></column>
+		</property>
+		<property name="phone" type="string">
+			<column name="phone"></column>
+		</property>
+		<property name="mail" type="string">
+			<column name="mail"></column>
+		</property>
+		<property name="gender" type="string">
+			<column name="gender"></column>
+		</property>
+		<property name="residence" type="string">
+			<column name="residence"></column>
+		</property>
+		<property name="university" type="string">
+			<column name="university"></column>
+		</property>
+		<property name="expectSalary" type="int">
+			<column name="expectSalary"></column>
+		</property>
+		<property name="workPlace" type="string">
+			<column name="workPlace"></column>
+		</property>
+		<property name="workFunction" type="string">
+			<column name="workFunction"></column>
+		</property>
+		<property name="profession" type="string">
+			<column name="profession"></column>
+		</property>
+		<property name="position" type="string">
+			<column name="position"></column>
+		</property>
+		<property name="workType" type="string">
+			<column name="workType"></column>
+		</property>
+		<property name="workExp" type="int">
+			<column name="workExp"></column>
+		</property>
+		<property name="projectExp" type="string">
+			<column name="projectExp"></column>
+		</property>
+		<property name="major" type="string">
+			<column name="major"></column>
+		</property>
+		<property name="skills" type="string">
+			<column name="skills"></column>
+		</property>
+		<property name="additionalInfo" type="string">
+			<column name="additionalInfo"></column>
+		</property>
+		<property name="status" type="string">
+			<column name="status"></column>
+		</property>
+		<property name="tximage" type="string">
+			<column name="tximage"></column>
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+
+/* 鍏ㄥ眬鑳屾櫙鎺у埗 */
+body { background:#fff; }  
+
+
+/* 鍏ㄥ眬瀛椾綋鎺у埗 */
+body{ font:12px/1.2 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif; color:#454545; }
+a:focus{ outline:1px dotted; }
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+
+
+/* 鍏ㄥ眬榛樿閾炬帴 */
+a { color:#009; text-decoration:none; outline: none; }  /* 閾炬帴棰滆壊 */
+a:hover { color:#939; text-decoration:underline; }      /* 榧犳爣缁忚繃鏃剁姸鎬� */
+
+
+/* 鍏ㄥ眬瀹藉害 */
+.nomalwidth { width:960px; }
+

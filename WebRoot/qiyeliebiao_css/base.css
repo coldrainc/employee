@@ -1,0 +1,19 @@
+*{margin: 0; padding: 0; list-style-type: none; line-height: 1.5; font-size: 14px; font-family: "微软雅黑"; box-sizing: border-box;}
+html, body{height: 100%;}
+a{text-decoration: none; cursor: pointer;}
+b{font-weight: normal;}
+
+table{width: 100%; table-layout: fixed; border-collapse: collapse;}
+button, input[type=submit]{border: 0; outline: 0; cursor: pointer;}
+input:-webkit-autofill{-webkit-box-shadow: 0 0 0 1000px #fff inset;}
+button:active {-ms-background-position-x: 1px; -ms-background-position-y: 1px;}
+select{padding: 3px 5px;}
+textarea{resize: none;}
+
+.flex{display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; align-items: center; justify-content: center;}
+.ellipsis{overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.clear:before, .clear:after{content: ""; display: table;}.clear:after{clear: both;}
+.fl{float: left;}.fr{float: right;}
+
+.closed{width: 30px; height: 30px; display: inline-block; background: url(../../images/user/closed.gif) no-repeat 0px 5px; position: absolute; top: 0; right: 0; cursor: pointer;}
+.promptBg{width: 100%; height: 100%; background: #000; position: fixed; top: 0; left: 0; z-index: 9999; opacity: 0.5; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);}

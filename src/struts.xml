@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<constant name="struts.custom.i18n.resources" value="resource"></constant>
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant>
+	<constant name="struts.multipart.maxSize" value="1000000000"/>
+	<package name="struts" extends="struts-default,json-default">
+		<!-- 学生登录 -->
+		<action name="loginAction" class="loginAction">
+			<result name="success">/gradPage.jsp</result>
+			<!-- <result type="json">
+				<param name="root">result</param>
+			</result> -->
+			<result name="input">/studLogin.jsp</result>
+		</action>
+		<!-- 管理员登录 -->
+		<action name="adminLoginAction" class="adminLoginAction">
+			<result name="success">/manager/index.jsp</result>
+			<result name="input">/adminLogin.jsp</result>
+		</action>
+		<!-- 企业登录 -->
+		<action name="enterpriseLoginAction" class="enterpriseLoginAction">
+			<result name="success">/gradPage.jsp</result>
+			<result name="input">/enterpriseLogin.jsp</result>
+		</action>
+		<!-- 学院登录 -->
+		<action name="instLoginAction" class="instituteLoginAction">
+			<result name="success">/instIndex.jsp</result>
+			<result name="input">/instLogin.jsp</result>
+		</action>
+		<!-- 查看简历 -->
+		<action name="lookResumeAction" class="lookResumeAction">
+			<result name="success">/resume.jsp</result>
+		</action>
+		<!-- 修改简历 -->
+		<action name="updateResumeInfoAction" class="updateResumeInfoAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<!-- 修改意向信息 -->
+		<action name="updateIntentionAction" class="updateIntentionAction"></action>
+
+		<action name="updateWorkExpAction" class="updateOtherAction" method="updateWorkExp"></action>
+		<action name="updateProjectExpAction" class="updateOtherAction" method="updateProjectExp"></action>
+		
+		<action name="txUploadAction" class="txUploadAction">
+			<interceptor-ref name="defaultStack">
+                <param name="maximumSize">500000000</param>
+                <param name="allowedTypes">
+					image/bmp,image/png,image/gif,image/jepg,image/jpg,image/x-png,image/pjpeg
+				</param>
+            </interceptor-ref>
+            <result name="success">/resume.jsp</result>
+            <result name="input">/uploadError.jsp</result>
+		</action>
+		
+		<action name="listEnterpriseAction" class="listEnterpriseAction"></action>
+		<action name="auditEnterprise" class="auditEnterprise"></action>
+		<action name="auditEnterprisePass" class="auditEnterprise" method="auditPass">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="auditEnterpriseFail" class="auditEnterprise" method="auditFail">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<!-- 查找招聘信息 -->
+		<action name="findRecruimenAction" class="findRecruimenAction">
+			<!-- <result name="success">/resume.jsp</result> -->
+		</action>
+		
+	</package>
+	
+</struts>    

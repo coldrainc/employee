@@ -1,0 +1,133 @@
+.fun-btns {
+    border-radius: 10px;
+    position: relative;
+}
+
+.fun-btns .circle {
+    position: absolute;
+    display: block;
+    left: 25px;
+    top: 8px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.fun-btns .circle .iconfont {
+    font-size: 24px;
+    color: #666666;
+}
+
+.icon-side-xs {
+    color: #FFF;
+    font-size: 23px !important;
+    position: absolute;
+    left: 25px;
+    top: 8px;
+}
+
+.c-char -wrap {
+    margin-top: 20px;
+}
+
+.char-graphics {
+    width: 100%;
+    position: relative;
+}
+
+.graphics-wrap {
+    width: 100%;
+    height: 200px;
+}
+
+.graphics-txt {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 175px;
+    text-align: center;
+    margin-left: -88px;
+    font-size: 12px;
+}
+
+.graphics-txt .graphics-level {
+    color: #E98F36;
+    font-size: 24px;
+}
+
+.graphics-txt p {
+    margin-bottom: 6px
+}
+
+.tip-green {
+    color: #80FF80 !important;
+}
+
+.graphics-txt .graphics-tip {
+    font-size: 14px
+}
+
+.graphics-txt .pect {
+    color: #E98F36;
+}
+
+.c-item-wrap {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.c-char-item {
+    margin: 0 10px;
+}
+
+.c-item-wrap .c-score-wrap {
+    color: #E98F36;
+}
+
+.svg-small {
+    margin: 5px;
+}
+
+.row .obtain-tags .col-content .content-item .content-txt {
+    display: table-cell;
+    padding-left: 60px;
+}
+
+.row .col-content .content-item .content-txt {
+    display: block;
+    padding-left: 0px;
+}
+
+.obtain-tags .tag-select, .obtain-tags .tag-input {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #DDD;
+    margin: 8px 0px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0px 5px;
+    color: #666;
+}
+
+@keyframes animate-up-down {
+    0% {
+        top: 0%;
+    }
+    25% {
+        top: -50%
+    }
+    50% {
+        top: -100%;
+    }
+    75% {
+        top: -50%;
+    }
+    100% {
+        top: 0%;
+    }
+}

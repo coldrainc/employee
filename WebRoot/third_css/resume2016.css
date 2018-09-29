@@ -1,0 +1,393 @@
+html,body,p,form,ul,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+th,td{padding:0}
+a{text-decoration:none}
+li{list-style:none}
+img{border:0 none}
+textarea{line-height:20px}
+input,button,textarea{font-size:14px;font-family:"microsoft yahei" !important;outline:0 none;margin:0;padding:0}
+input::-ms-clear{display:none}
+body{line-height:20px;font-size:14px;font-family:"Microsoft YaHei" !important;background-color:#fff}
+
+.icons{display:inline-block;#display:inline;vertical-align:middle;background:url(http://img01.51jobcdn.com/im/2016/resume/icon_resume.png) no-repeat;#zoom:1}
+.btnbox{width:100%;text-align:center;padding:15px 0}
+
+/*--编辑或删除--*/
+.top_wrap,.edit{position:relative;border:1px solid transparent}
+.top_wrap:hover,.edit:hover{border:1px solid #ff6000 !important}
+.top_wrap:hover .ed_icon_blue,.top_wrap:hover .del,.top_wrap:hover .ed_icon_undel{display:inline-block}
+.top_wrap .ed_icon_blue,.top_wrap .ed_icon_yellow,.top_wrap .ed_icon_undel,.top_wrap .del,.top_wrap .undel{position:absolute;display:none;width:20px;height:20px;top:20px;right:30px;background-position:-260px -20px;cursor:pointer}
+.top_wrap .ed_icon_blue:hover,.edit .edi:hover{background-position:-280px -20px}
+.top_wrap .del{background-position:-260px 0}
+.top_wrap .del,.top_wrap .undel{right:0}
+/*--编辑和删除--*/
+.edit:hover .ed_icon{display:inline-block}
+.edit .ed_icon{position:absolute;display:none;width:60px;height:20px;top:20px;right:30px}
+.edit .ed_icon em:first-child{margin-left:0}
+.edit .edi,.edit .del,.edit .unedi,.edit .undel{display:inline-block;width:20px;height:20px;vertical-align:baseline;margin-left:20px;background-position:-260px -20px;cursor:pointer}
+.edit .del,.edit .undel{background-position:-260px 0}
+.edit .del:hover,.top_wrap .del:hover{background-position:-280px 0}
+.top_wrap .ed_icon_undel,.edit .unedi,.top_wrap .undel{background-position:-300px -20px;cursor:auto}
+.edit .undel{background-position:-300px 0;cursor:auto}
+
+/*--简历展示头部--*/
+.top{width:100%;height:65px;margin-bottom:15px;background-color:#fafafa;border-bottom:1px solid #e2e2e2}
+.top .logo{float:left;margin:10px 0}
+.top .logo img{display:block}
+.top a{float:right;height:20px;line-height:20px;font-size:12px;color:#666;margin:23px 0}
+.top a em{display:inline-block;width:4px;height:4px;vertical-align:middle;margin:0 6px 0 10px;background-color:#ff7304}
+/*--简历展示左边--*/
+.main{width:1005px;margin:15px auto 0}
+.nav{float:left;width:210px;background-color:#fafafa;border-top:2px solid #ff6000}
+.nav .nav_top{padding:20px 15px 10px}
+.nav .nav_top p{position:relative;height:30px;line-height:30px}
+.nav .nav_top .name{display:inline-block;max-width:80px;font-size:18px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav .nav_top .kt{position:absolute;display:inline-block;height:20px;line-height:20px;font-size:12px;color:#fff;top:5px;margin-left:5px;padding:0 3px;background-color:#ff9f20;border-radius:2px}
+.nav .top_wrap,.nav .wrap{width:208px;border:1px solid #ddd;border-top:none}
+.nav .com,.nav .wrap{position:relative;width:208px}
+.nav .com,.nav .top_wrap:hover{border-top:none !important}
+.nav .txt .ef{font-size:18px;color:#333}
+.nav .btnbox{padding-top:0}
+.nav .btnbox .p_but{margin:0 15px 0 7px}
+.nav .btnbox .p_but:first-child{margin:0 7px 0 15px}
+/*--没有快速投递--*/
+.nav .nav_top .nkt .kt{display:none}
+.nav .nav_top .nkt .name{max-width:140px}
+/*--.nkt 加在p标签上--*/
+.nav .nav_top .ed_icon_blue,.nav .nav_top .ed_icon_red,.nav .nav_top .ed_icon_undel{top:50%;right:0;margin-top:-10px}
+.nav .cupBox{margin:0 15px 15px}
+.nav .cupBox .cup{position:relative;height:22px;line-height:22px;font-size:12px;color:#999}
+.nav .cupBox .cup span{color:#666}
+.nav .cupBox .pop{position:absolute;display:none;width:100%;height:100%;top:0;left:0;background-color:#fafafa;opacity:0.5;filter:alpha(opacity=50);z-index:3}
+.nav .cupBox .star,.nav .cupBox .hstar{position:absolute;display:inline-block;height:20px;background-image:url(http://img01.51jobcdn.com/im/2016/resume/icon_resume.png);top:50%;left:0;margin-top:-10px}
+.nav .cupBox .n_star,.nav .cupBox .hn_star{display:inline-block;width:102px;height:20px;margin-bottom:-5px;background-image:url(http://img01.51jobcdn.com/im/2016/resume/icon_resume.png)}
+.nav .cupBox .star{background-position:-120px -59px;z-index:2}
+.nav .cupBox .hstar{background-position:-120px -19px;z-index:2}
+.nav .cupBox .n_star{background-position:-120px -38px}
+.nav .cupBox .hn_star{background-position:-120px 2px}
+.nav .cupBox a{color:#00457d}
+.nav .cupBox a:hover{color:#ff6000}
+.nav .bob .cup,.nav .bob .cup span,.nav .bob a{color:#b0b0b0}
+.nav .bob .hp,.nav .bob .hp:hover{background-position:-40px -100px}
+/*--0.5星到5星--*/
+.nav .cupBox .s0_5{width:9px}
+.nav .cupBox .s1{width:20px}
+.nav .cupBox .s1_5{width:30px}
+.nav .cupBox .s2{width:40px}
+.nav .cupBox .s2_5{width:51px}
+.nav .cupBox .s3{width:60px}
+.nav .cupBox .s3_5{width:72px}
+.nav .cupBox .s4{width:80px}
+.nav .cupBox .s4_5{width:93px}
+.nav .cupBox .s5{width:102px}
+
+.nav_body{border-left:1px solid #ddd;border-right:1px solid #ddd}
+.nav .nav_body a{position:relative;display:block;height:50px;line-height:50px;padding-left:56px;border-bottom:1px solid #e4eaee;color:#333}
+.nav .nav_body .left{position:absolute;display:block;width:30px;height:30px;top:50%;left:20px;margin-top:-15px;background-image:url(http://img01.51jobcdn.com/im/2016/icon/icon_icons.png)}
+.nav .nav_body a.on,.nav .nav_body a:hover{color:#ff6000}
+.nav .nav_body a.on em{position:absolute;display:block;height:100%;top:0;left:0;border-left:2px solid #ff6000}
+.nav .pt{background-image:url(http://img01.51jobcdn.com/im/2016/resume/pt.png);background-position:117px 17px;background-repeat:no-repeat}
+
+.nav .nav_body .left.a{background-position:0 0}
+.nav .nav_body .left.b{background-position:0 -30px}
+.nav .nav_body .left.c{background-position:0 -60px}
+.nav .nav_body .left.d{background-position:0 -90px}
+.nav .nav_body .left.e{background-position:0 -120px}
+.nav .nav_body .left.f{background-position:0 -150px}
+.nav .nav_body .left.g{background-position:0 -180px}
+.nav .nav_body .left.h{background-position:0 -210px}
+.nav .nav_body .left.i{background-position:0 -240px}
+
+.nav .nav_body .on .left.a,.nav .nav_body a:hover .left.a{background-position:-30px 0}
+.nav .nav_body .on .left.b,.nav .nav_body a:hover .left.b{background-position:-30px -30px}
+.nav .nav_body .on .left.c,.nav .nav_body a:hover .left.c{background-position:-30px -60px}
+.nav .nav_body .on .left.d,.nav .nav_body a:hover .left.d{background-position:-30px -90px}
+.nav .nav_body .on .left.e,.nav .nav_body a:hover .left.e{background-position:-30px -120px}
+.nav .nav_body .on .left.f,.nav .nav_body a:hover .left.f{background-position:-30px -150px}
+.nav .nav_body .on .left.g,.nav .nav_body a:hover .left.g{background-position:-30px -180px}
+.nav .nav_body .on .left.h,.nav .nav_body a:hover .left.h{background-position:-30px -210px}
+.nav .nav_body .on .left.i,.nav .nav_body a:hover .left.i{background-position:-30px -240px}
+
+.nav .nav_body .right{position:absolute;display:block;width:20px;height:20px;top:50%;right:20px;margin-top:-10px;background:url(http://img01.51jobcdn.com/im/2016/form/form.png) no-repeat}
+.nav .nav_body .right.y{background:url(http://img01.51jobcdn.com/im/2016/icon/icon_righty.png) 3px 3px no-repeat}
+.nav .nav_body .right.n{background-position:0 -122px}
+
+/*--简历展示右边--*/
+.column{float:right;width:780px;#overflow:hidden}
+.box{position:relative;border:1px solid transparent;border-top:1px solid #ddd}
+.box:first-child{border-top:1px solid #fff}
+.box.top_wrap:first-child:hover{border-top:1px solid #ff6000}
+.box .hd{position:relative;height:58px;line-height:58px;background-color:#fff}
+.box .hd.on{position:fixed;width:778px;top:0;background-color:#fff;border:1px solid #ddd;border-top:0 none;box-shadow:2px 3px 5px #f5f5f5;z-index:10}
+.box .f12{font-size:12px;color:#999;margin-left:5px}
+.box .esp,.box .eft{font-size:12px;color:#00457d;padding-left:5px;cursor:pointer}
+.box .esp:hover,.box .dle .close:hover,.box .eft:hover{color:#ff6000}
+.box .eft{display:block;line-height:20px;padding-left:0}
+.box .hd strong{height:30px;line-height:30px;font-size:16px;font-weight:bold;color:#ff6000;vertical-align:baseline;#vertical-align:middle;padding:14px 0;background:none}
+.box .hd em{width:30px;height:30px;margin:0 10px;background-image:url(http://img01.51jobcdn.com/im/2016/icon/icon_icons.png)}
+.box .hd .e0{background-position:-30px -272px}
+.box .hd .e1{background-position:-30px -32px}
+.box .hd .e2{background-position:-30px -62px}
+.box .hd .e3{background-position:-30px -92px}
+.box .hd .e4{background-position:-30px -122px}
+.box .hd .e5{background-position:-30px -152px}
+.box .hd .e6{background-position:-30px -182px}
+.box .hd .e7{background-position:-30px -212px}
+.box .hd .e8{background-position:-30px -242px}
+.box .add,.box .unadd{position:absolute;height:20px;line-height:20px;font-size:12px;color:#00457d;top:50%;right:30px;margin-top:-10px;padding-left:20px;background-position:-480px 0;cursor:pointer}
+.box .add:hover{color:#ff7c42;background-position:-480px -20px}
+.box .unadd{color:#b0b0b0;background-position:-480px -40px;cursor:default}
+.box .tit{position:relative;height:40px;line-height:40px;color:#666;padding:0 30px;background-color:#f5f5f5}
+.box .none{display:block;width:380px;height:30px;line-height:30px;color:#b0b0b0;margin:15px auto;padding-left:35px;background-position:-450px -240px}
+.box .con{#display:inline-block;line-height:30px;color:#666;padding:15px}
+.box .bd{border-top:1px dotted #ddd}
+.box .bd:first-child{border-top:none}
+.box .con strong{display:block;width:550px;font-weight:bold;color:#333}
+.box .con .pp{padding:0 15px}
+.box .e{position:relative;float:left;width:631px;line-height:30px;color:#333;word-break:break-all;padding:0 15px 0 100px}
+.box .e.e2{width:258px}
+.box .e.e3{min-width:258px;width:auto}
+.box .e.e4{width:78px;padding-right:0}
+.box .e label{position:absolute;width:61px;color:#666;text-align:justify;text-align-last:justify;top:0;left:15px}
+.box .e label:after{display:inline-block;width:100%;height:0;content:'\00a0';overflow:hidden}
+.box .e i{position:absolute;font-style:normal;left:85px}
+.box .el{padding-left:125px}
+.box .el label{width:95px;#width:98px}
+.box .el i{left:110px}
+.box .ef label{width:70px}
+.box .es{padding-left:92px}
+.box .es i{left:77px}
+.box .head{position:relative;min-height:108px;color:#333;padding:15px 15px 15px 115px}
+.box .head .email,.box .head .tel{width:180px;height:20px;line-height:20px;padding-left:25px;background:url(http://img01.51jobcdn.com/im/2016/resume/y2.png) no-repeat}
+.box .head .email{margin-right:76px;background-image:url(http://img01.51jobcdn.com/im/2016/resume/y3.png)}
+.box .head .ed_icon_blue{right:0}
+.box .face{position:absolute;width:85px;color:#c3c3c3;text-align:center;top:15px;left:15px}
+.box .face img{background-color:#fafafa}
+.box .face .esp{padding:0 5px}
+.box .f2 img{background-color:#f0f0f0}
+.box .ok{width:20px;height:20px;margin-left:5px;background-position:-262px -240px}
+.box .ok:hover{background-position:-302px -240px}
+.box .name{height:30px;line-height:30px;font-size:24px;margin-bottom:18px;#margin-bottom:15px}
+.box .tab{height:30px;line-height:30px;margin-top:10px}
+.box .cld{color:#ddd !important}
+.box .cl3{color:#333 !important}
+.box .clb{color:#b0b0b0 !important}
+.box .all{position:relative;display:none;color:#666;top:12px;margin-bottom:20px;padding:10px 0;background-color:#fafafa;border:1px solid #eee}
+.box .mbox{position:absolute;height:36px;line-height:16px;top:-24px;right:15px;cursor:pointer;z-index:3}
+.box .mbox:hover span{color:#ff6000;background-position:-435px -80px}
+.box .mbox.on:hover span{color:#ff6000;background-position:-435px -120px}
+.box .mbox em{position:absolute;display:none;width:20px;height:20px;right:25px;bottom:-1px;margin:0;background-position:-120px -89px;z-index:3}
+.box .mbox span{height:16px;line-height:16px;font-size:12px;color:#00457d;padding-right:15px;background-position:-435px -60px;cursor:pointer}
+.box .mbox.on span{background-position:-435px -100px}
+.box.m1 .abox{margin:0 15px}
+.box.m1 .mbox{height:37px;top:-37px;#height:39px;#top:-39px;right:auto;left:468px}
+.box.m1 .all{top:0;margin-bottom:22px;padding-right:15px}
+.box .ebox{padding-right:95px}
+.box .ebox .abox{margin-right:-80px}
+.box .abox{position:relative;line-height:30px}
+.box .head .abox{margin-left:-100px}
+.box .sp{height:30px}
+.box .sp span,.box .sp strong{float:left;width:120px;margin-left:15px}
+.box .jian em{font-size:14px;color:#333;margin-left:5px}
+.box .fbox{position:relative}
+.box strong.fbox{width:190px}
+.box .fbox em,.box .cha a{position:absolute;line-height:18px;font-style:normal;font-weight:normal;top:50%;margin-top:-9px}
+.box .hai i,.box .guan em{display:inline-block;#display:inline;line-height:16px;#line-height:19px;font-size:12px;font-style:normal;color:#fff;margin-left:5px;padding:1px 3px;background-color:#3cbe7f;border-radius:2px;#zoom:1}
+.box .guan em{background-color:#ff9f20}
+.box .fbox.hai em{margin-top:-11px\9}
+.box .fbox span{float:left;width:auto;max-width:100%;vertical-align:bottom;margin:0}
+.box .fbox .zhi{width:100%;text-align:right}
+.box .fbox.guan{width:440px;padding-right:50px}
+.box .fbox.jian{width:140px;padding-right:50px}
+.box .fbox.hai{width:130px;padding-right:60px}
+.box .fbox.icon{width:169px;padding-right:21px}
+.box .fbox.jian.hai{width:85px;padding-right:105px}
+.box .fbox.icon.hai{width:110px;padding-right:80px}
+.box .fbox.icon a{display:inline-block;width:20px;height:20px;vertical-align:middle;background:url(http://img01.51jobcdn.com/im/2016/resume/icon_resume.png) -258px -240px no-repeat}
+.box .fbox.icon a:hover{background-position:-298px -240px}
+.box .fbox.icon.hai em{width:80px}
+.box .fbox.cha{width:505px;padding-right:45px}
+.box .fbox.cha a,.box .fbox.ma a,.box .fbox.sp a{font-size:12px;font-weight:normal;color:#00457d;margin-left:5px}
+.box .fbox.ma,.box .fbox.sp{float:left;width:244px;height:52px;line-height:52px;padding:0 100px 0 30px}
+.box .fbox.ma a,.box .fbox.sp a{position:absolute;height:30px;line-height:30px;top:50%;margin-top:-15px;padding-left:27px;background:url(http://img01.51jobcdn.com/im/2016/resume/spip.png) no-repeat}
+.box .fbox.ma a{padding-left:32px;background:url(http://img01.51jobcdn.com/im/2016/resume/mast.png) no-repeat}
+.box .fbox.ma a:hover,.box .fbox.sp a:hover,.box .cha a:hover{color:#ff6000}
+.box .w140{width:135px !important}
+.box .w180{width:190px !important}
+.box .w280{width:285px !important}
+.box .w295{width:295px !important}
+.box .w490{width:490px !important}
+.box .cell{position:relative}
+.box .cell strong{float:left;width:120px;margin:0 15px}
+.box .cell span,.box .cell i{position:relative;display:inline-block;width:400px;height:18px;line-height:18px;font-size:12px;color:#fff;top:4px;left:11px;background-color:#ddd;border-radius:20px}
+.box .cell i{position:absolute;width:390px;font-style:normal;text-align:right;top:0;left:0;padding-right:10px;background-color:#ff9f20;z-index:3}
+.box .sl i{width:290px}
+.box .lh i{width:190px}
+.box .yb i{width:90px}
+.box .com{margin-bottom:24px}
+.box .btnbox{padding:0 0 25px}
+.box .btox.b2{width:245px}
+.box .btox.b2 .btn.on{#width:122px}
+.box .ong{float:left;white-space:nowrap}
+.box .bd.top_wrap{overflow:hidden}
+.box .bd.top_wrap:first-child{border-top:1px solid transparent}
+.box.b2 .con{padding-left:0}
+.box.b2 .all{margin-left:15px}
+.box.b2 .h2 label{width:130px}
+.box.b2 .h2 .c3{padding-left:140px}
+
+/*--简历编辑--*/
+.com,.box .com{background-color:#fcfcfc;border:1px solid #ff6000}
+.com:first-child,.box .com:first-child{border-top:1px solid #ff6000}
+.com .mbox{top:-36px}
+.com .mbox em{background-position:-150px -89px}
+.com .all{top:0;margin-bottom:10px;padding-bottom:0;#padding-bottom:10px;background-color:#f5f5f5}
+.com .all p{color:#999}
+.com .frt{float:right;line-height:20px;font-size:12px;color:#999}
+.com .cbox{position:relative;#z-index:4}
+.com .c{position:relative;width:591px;line-height:30px;color:#666;padding-left:125px}
+.com .c label{position:absolute;width:110px;color:#666;text-align:right;text-align-last:right;top:0;left:0}
+.com .c i{position:absolute;height:18px;font-style:normal;top:2px;left:115px;color:#ff6000}
+.com .c1{float:left;width:285px}
+.com .c2{float:left;width:200px;padding-left:90px}
+.com .c2 label{width:75px}
+.com .c2 i{left:80px}
+.com .c3{float:left;width:233px}
+.com .c4{float:left;width:224px}
+.com .c7{float:left;width:211px}
+.com .c4,.com .c.cl{padding-left:110px}
+.com .c4 label,.com .c.cl label{width:95px}
+.com .c4 i,.com .c.cl i{left:100px}
+.com .c5{float:left;width:80px}
+.com .c3 .sh{width:233px}
+.com .c4 .sh{width:195px;margin-right:5px}
+.com .c .tbox,.com.Fm .c .tbox{padding-left:0}
+.com .c .ttag{margin:0 5px 5px 0;padding:0 20px 0 5px}
+.com .c .ttag span{float:left;max-width:82px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.com .head .abox{margin-top:46px}
+.com .head .abox2{margin:0 0 5px -100px}
+.com .head .c6{padding-left:109px}
+.com .head .c6 .sh{width:280px}
+.com .head .c1{width:280px;padding-left:109px}
+.com .head .c1 label,.com .head .c6 label{width:94px}
+.com .head .c1 i,.com .head .c6 i{left:99px}
+.com .abox2 .c1{padding-left:110px}
+.com .head .sh,.com .c5 .sh,.com .c7 .sh{width:100%}
+.com .head .c4{width:247px}
+.com .head .c4 .sh{width:212px}
+.com .head .c4 .btox{margin-bottom:0}
+.com .c .sm{width:100px !important;vertical-align:top;margin-right:5px}
+.com .c .sx{width:130px}
+.com .c .sxr,.com .c .sxt{float:left;width:111px;margin-right:10px}
+.com .c .sxt{width:148px}
+.com .c .sl{width:180px;margin-right:5px}
+.com .c .sg{float:left;width:82px}
+.com .head .sl{width:175px !important;margin-right:0}
+.com .sd{margin-top:10px}
+.com .sd .sh{width:591px}
+.com textarea{display:block;#display:initial;width:569px;min-height:130px;overflow:auto;resize:none;padding:10px;background-color:#fff;border:1px solid #ddd}
+.com .tz{font-size:14px;color:#666;cursor:pointer}
+.com .tz em{display:inline-block;width:13px;height:13px;vertical-align:middle;margin:-2px 5px 0 0;background-color:#fff;border:1px solid #ddd}
+.com .tz.on em{border-color:#ff6000;background-image:url(http://img01.51jobcdn.com/im/2016/icon/icon_checked.png)}
+.com .chose{position:relative;width:283px;height:28px;line-height:28px;color:#00457d;text-align:center;overflow:hidden;margin-top:10px;background-color:#fff;border:1px solid #ddd}
+.com .chose:hover{background-color:#eee}
+.com .chose input{position:absolute;font-size:100px;top:0;right:0;filter:alpha(opacity=0);opacity:0;cursor:pointer;z-index:1}
+.com .word{position:relative;z-index:1}
+.com .word em{font-size:12px;font-style:normal}
+.com .word em em{display:inline-block;max-width:120px;vertical-align:bottom;#vertical-align:middle}
+.com .mr{margin-right:21px}
+.com .err{line-height:20px;font-size:12px;color:#ff6000;word-break:break-all;clear:both}
+.com .err em{display:inline-block;#display:inline;width:20px;height:20px;vertical-align:middle;background:url(http://img01.51jobcdn.com/im/2016/form/error.png) 0 2px no-repeat;#zoom:1}
+.com .c5 .err{#float:left;width:170px}
+.com .clno .err{clear:none}
+.com .dao,.com .gao{float:left;width:25px;text-align:center}
+.com .gao{width:12px}
+.com .h30{min-height:30px;margin-bottom:10px}
+.com .h30:after{display:block;height:0;font-size:0;clear:both;content:''}
+.com .sh{float:left;width:285px;vertical-align:middle}
+.com .tbox{padding-left:125px}
+.com .tbox .clear{height:0}
+.com.Fm .tbox{padding-left:109px}
+.com .ul.u2 label{text-align:left;text-align-last:left}
+.com .btox{width:210px;margin-bottom:10px}
+
+/*粘贴简历*/
+.txtBox{line-height:normal;word-wrap:break-word;padding:0 30px 30px}
+
+/*英文简历*/
+.eng{font-family:'Arial','microsoft yahei';font-size:13px}
+.eng .con strong,.eng .jian em,.eng .tz{font-size:13px}
+.eng .sp span{width:110px;text-align:right}
+.eng .sp span.at{width:auto;text-align:left}
+.eng .sp span,.eng .sp strong{margin-left:10px}
+.eng .box .e{width:616px;word-wrap:break-word;padding-left:130px}
+.eng .box .e label{width:105px;text-align:right}
+.eng .box .e i{left:122px}
+.eng .box .e.e2{width:228px}
+.eng .box .e.e3{min-width:229px;width:auto}
+.eng .box .e.e4{width:96px;min-width:auto;padding-left:85px}
+.eng .box .e.e4 label{width:75px;left:0}
+.eng .box .e.e4 i{left:78px}
+.eng .box .e.e4.el{left:15px}
+.eng .mbox span{background-position:-457px -60px}
+.eng .mbox:hover span{background-position:-457px -80px}
+.eng .mbox.on span{background-position:-457px -100px}
+.eng .mbox.on:hover span{background-position:-457px -120px}
+.eng .mbox em{right:10px}
+.eng .m1 .mbox{#top:-37px;left:585px;#left:590px}
+.eng .fbox span{margin:0}
+.eng .fbox.jian{width:118px;padding-right:72px}
+.eng .fbox.jian.hai{width:55px;padding-right:135px}
+.eng .fbox.icon.hai{width:106px;padding-right:84px}
+.eng .fbox.icon.hai em{width:84px}
+.eng .con .pp{padding-left:130px}
+.eng .all .pp{padding-left:15px}
+.eng .box .none{width:600px}
+.eng .face .esp{padding:0}
+.eng .c .sxr{width:101px}
+.eng .mbox .icons{width:28px}
+.eng .f16,.eng .txt,.eng .txt .ef{font-size:13px !important}
+.eng .nav .ef{font-size:18px !important}
+.eng .head .abox{margin-top:0}
+.eng .nav_body a{padding-left:46px}
+.eng .nav_body .left{left:10px}
+.eng .nav .pt{background-position:160px 17px}
+.eng .hpBox.h_open .h_head{left:130px}
+.eng .hpBox.h_exam .h_head{right:190px}
+/*回到顶部*/
+#goTop{display:none;position:fixed;width:48px;height:40px;line-height:16px;color:#FFF;font-size:0;text-align:center;bottom:40px;left:1300px;padding-top:8px; background:url(../img/img_top.png) center center #c1c1c1 no-repeat}
+#goTop:hover{font-size:12px;background:#FF6000}
+
+/*弹层*/
+.View_pop,.View_pop .imgBox{width:680px;height:600px}
+.View_pop .imgBox img{display:block}
+.View_pop .close{position:absolute;width:30px;height:30px;top:0;right:-50px;background:url(http://img01.51jobcdn.com/im/2016/pop/bclose.png) no-repeat;cursor:pointer}
+
+/*问号答疑*/
+.hpBox{position:relative;line-height:30px}
+.hpBox .h_head{position:absolute;width:22px;height:30px;top:-20px}
+.hpBox .hp{display:block;width:20px;height:20px;background:url(http://img01.51jobcdn.com/im/2016/form/form.png) 0 -100px no-repeat;cursor:pointer}
+.hpBox .hp:hover{background-position:-20px -100px}
+.hpBox .h_arr{position:absolute;display:none;width:21px;height:10px;bottom:0;left:0;vertical-align:middle;background:url(http://img01.51jobcdn.com/im/2016/form/hp_arr.png) no-repeat}
+.hpBox .h_body{position:absolute;display:none;width:458px;line-height:20px;top:6px;left:0;z-index:5}
+.hpBox .h_box{position:relative;width:458px;font-size:12px;color:#666;background:url(http://img01.51jobcdn.com/im/2016/form/hp_con.png) repeat-y}
+.hpBox .h_top,.hpBox .h_btm{width:100%;height:8px;background:url(http://img01.51jobcdn.com/im/2016/form/hp_top.png) repeat-x}
+.hpBox .h_btm{background-image:url(http://img01.51jobcdn.com/im/2016/form/hp_btm.png)}
+.hpBox .h_con{padding:6px 14px}
+.hpBox .org{color:#ff9f20}
+.hpBox .bold{font-weight:bold}
+.hpBox.h_open .h_head{left:105px}
+.hpBox.h_star .h_head{#top:-14px;left:105px}
+.hpBox.h_star .h_body{top:12px}
+.hpBox.h_exam .h_head{top:-24px;right:198px}
+.hpBox.h_exam .h_body{top:2px;left:110px}
+.hpBox.on,.hpBox.on .h_head{z-index:6}
+.hpBox.on .h_arr,.hpBox.on .h_body{display:block}
+.com .head .h_exam .h_head{right:0}
+.com .head .h_exam .h_body{left:auto;right:-10px}
+
+/*引导页面*/
+/* .guide{width:1006px;z-index:200} */
+.guide .in{position:relative;width:826px;height:605px;background:url(http://img01.51jobcdn.com/im/2016/resume/guide_img.png) no-repeat}
+.guide a{position:absolute;width:132px;height:32px;bottom:0;right:0}
+.guide .close{position:absolute;width:30px;height:30px;cursor:pointer;top:75px;right:-180px;background:url(http://img01.51jobcdn.com/im/2016/pop/bclose.png) no-repeat}

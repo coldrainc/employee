@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jxufe.model">
+	<class name="PersonalInfo" table="personalInfo" catalog="jygl">
+		<id name="id" type="int">
+			<column name="id"></column>
+			<generator class="identity"></generator>
+		</id>
+		<property name="name" type="string">
+			<column name="name"></column>
+		</property>
+		<property name="insitute" type="string">
+			<column name="insitute" length="10"></column>
+		</property>
+
+		<property name="school" type="string">
+			<column length="15" name="schoool"></column>
+		</property>
+
+		<property name="workExp" type="string">
+			<column length="150" name="workExp"></column>
+		</property>
+		
+		<property name="workType" type="string">
+			<column length="20" name="workType"></column>
+		</property>
+		
+		<property name="hobby" type="string">
+			<column length="50" name="hobby"></column>
+		</property>
+		
+		<property name="programExp" type="string">
+			<column length="100" name="programExp"></column>
+		</property>
+		
+		<property name="workTime" type="int">
+			<column name="workTime"></column>
+		</property>
+		
+		<property name="honor" type="string">
+			<column length="150" name="honor"></column>
+		</property>
+		
+		<property name="image" type="string">
+			<column length="50" name="image"></column>
+		</property>
+		
+		<property name="number" type="int">
+			<column name="number"></column>
+		</property>
+		
+	</class>
+</hibernate-mapping>

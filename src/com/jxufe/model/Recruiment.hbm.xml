@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jxufe.model">
+	<class name="Recruiment" table="recruiment" catalog="jygl">
+		<id name="id" type="int">
+			<column name="id"></column>
+			<generator class="identity"></generator>
+		</id>
+		<property name="post" type="string">
+			<column name="post"></column>
+		</property>
+		<property name="salary" type="string">
+			<column name="salary"></column>
+		</property>
+		<property name="workPlace" type="string">
+			<column name="workPlace"></column>
+		</property>
+		<property name="workTime" type="string">
+			<column name="workTime"></column>
+		</property>
+		<property name="education" type="string">
+			<column name="education"></column>
+		</property>
+		<property name="company" type="string">
+			<column name="company"></column>
+		</property>
+		<property name="welfare" type="string">
+			<column name="welfare"></column>
+		</property>
+	</class>
+</hibernate-mapping>

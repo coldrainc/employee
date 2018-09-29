@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jxufe.model">
+	<class name="Enterprise" table="entermessage" catalog="jygl">
+		<id name="enterId" type="int">
+			<column name="enterId"></column>
+			<generator class="identity"></generator>
+		</id>
+		<property name="enterRegisterNum" type="string">
+			<column name="enterRegisterNum"></column>
+		</property>
+		<property name="enterName" type="string">
+			<column name="enterName"></column>
+		</property>
+		<property name="enterRegisterAddr" type="string">
+			<column name="enterRegisterAddr"></column>
+		</property>
+		<property name="enterLawyer" type="string">
+			<column name="enterLawyer"></column>
+		</property>
+		<property name="enterRegisterWage" type="int">
+			<column name="enterRegisterWage"></column>
+		</property>
+		<property name="enterFoundTime" type="date">
+			<column name="enterFoundTime"></column>
+		</property>
+		<property name="ceo" type="string">
+			<column name="ceo"></column>
+		</property>
+		<property name="degreeDemand" type="int">
+			<column name="degreeDemand"></column>
+		</property>
+		<property name="perWage" type="double">
+			<column name="perWage"></column>
+		</property>
+		<property name="enterWorkFiled" type="int">
+			<column name="enterWorkFiled"></column>
+		</property>
+		<property name="workExp" type="int">
+			<column name="workExp"></column>
+		</property>
+		<property name="priority" type="double">
+			<column name="priority"></column>
+		</property>
+		<property name="status" type="int">
+			<column name="status"></column>
+		</property>
+			<property name="audit" type="int">
+			<column name="audit"></column>
+		</property>
+	</class>
+</hibernate-mapping>
